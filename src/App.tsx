@@ -94,7 +94,7 @@ function App() {
       />
 
       <main className="relative z-10 flex w-full max-w-155 flex-col items-center text-center font-serif text-inkh-fit">
-        <h1 className="m-0 mb-6 font-script text-3xl font-normal leading-none text-ink-strong">
+        <h1 className="m-0 mb-6 font-script  text-3xl font-normal leading-relaxed text-ink-strong">
           {guest.title}
         </h1>
 
