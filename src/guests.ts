@@ -7,7 +7,7 @@ export type Guest = {
 export const guests: Guest[] = [
   { id: 'claude', name: 'Claude', title: 'Дорогой Claude!' },
   { id: 'ivan', name: 'Иван Петров', title: 'Дорогой Иван!' },
-  { id: 'petrovy', name: 'Пётр и Анна Петровы', title: 'Дорогие Пётр и Анна!' },
+  { id: 'test', name: 'Тестовый юзер', title: 'Дорогой тестовый гость!' },
 ]
 
 const fallback: Guest = { id: 'unknown', name: 'Неизвестный гость', title: 'Дорогие гости!' }
