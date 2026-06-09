@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Mia Manueva";
+  src: url("./assets/fonts/miamanueva.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("./assets/fonts/EBGaramond.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-script: "Mia Manueva", cursive;
+  --font-serif: "EB Garamond", serif;
+
+  --color-bg: #f3f4ee;
+  --color-ink: #4f5340;
+  --color-ink-strong: #3c4131;
+  --color-line: #8b9072;
+}
