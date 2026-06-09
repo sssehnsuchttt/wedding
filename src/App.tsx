@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { getGuest } from './guests'
-import flowerTopLeft from './assets/img/flowerLeftUpperCorner.png'
-import flowerBottomRight from './assets/img/flowerRightBottomCorner.png'
-import divider from './assets/img/divider.png'
-import locationIcon from './assets/img/location.png'
-import glassesIcon from './assets/img/glasses.png'
-import ringsIcon from './assets/img/rings.png'
-import clocheIcon from './assets/img/cloche.png'
+import flowerTopLeft from './assets/img/flowerLeftUpperCorner.webp'
+import flowerBottomRight from './assets/img/flowerRightBottomCorner.webp'
+import divider from './assets/img/divider.webp'
+import locationIcon from './assets/img/location.webp'
+import glassesIcon from './assets/img/glasses.webp'
+import ringsIcon from './assets/img/rings.webp'
+import clocheIcon from './assets/img/cloche.webp'
 import {Frown} from "lucide-react";
 
 const schedule = [
