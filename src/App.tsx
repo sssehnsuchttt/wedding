@@ -28,6 +28,10 @@ const guest = getGuest(new URLSearchParams(window.location.search).get('id'))
 
 const storageKey = `rsvp:${guest.id}`
 
+const address = guest.plural
+  ? { withYou: 'с вами', you: 'вы', support: 'поддержите' }
+  : { withYou: 'с тобой', you: 'ты', support: 'поддержишь' }
+
 function App() {
   const [status, setStatus] = useState<Status>(() =>
     localStorage.getItem(storageKey) === 'accepted' ? 'confirmed' : 'idle',
@@ -68,7 +72,7 @@ function App() {
   }
 
   const primaryLabel: Record<Status, string> = {
-    idle: 'Я приду',
+    idle: guest.plural ? "Мы придём" : "Я приду",
     sending: 'Отправляем…',
     confirmed: 'Согласие отправлено ✓',
     revoking: 'Согласие отправлено ✓',
@@ -100,7 +104,7 @@ function App() {
 
         <p className={leadClass}>
           Мы будем счастливы разделить
-          <br />с вами радость нашего дня!
+          <br />{address.withYou} радость нашего дня!
         </p>
 
         <img className="my-7 h-auto w-[clamp(150px,50%,230px)] object-contain opacity-90" src={divider} alt="" aria-hidden="true" />
@@ -137,8 +141,8 @@ function App() {
         </div>
 
         <p className={leadClass}>
-          Мы будем очень рады, если вы
-          <br />поддержите цветовую гамму праздника:
+          Мы будем очень рады, если {address.you}
+          <br />{address.support} цветовую гамму праздника:
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-2 sm:gap-3">
