@@ -22,6 +22,7 @@ export const guests: Guest[] = [
   { id: 'FrIOO9po', name: 'Виталина', title: 'Дорогая Вита!', plural: false },
   { id: '9SOzYf50', name: 'Диана', title: 'Прикинь бро аж сайт запилил', plural: false },
   { id: 'VoV0EG21', name: 'Вова', title: 'Вова!', plural: false },
+  { id: 'EfN67PfN', name: 'Даша Никитина', title: 'Дорогая Даша!', plural: false },
 ]
 
 const fallback: Guest = { id: 'unknown', name: 'Неизвестный гость', title: 'Дорогие гости!', plural: true }
