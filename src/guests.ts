@@ -25,6 +25,7 @@ export const guests: Guest[] = [
   { id: 'EfN67PfN', name: 'Даша Никитина', title: 'Дорогая Даша!', plural: false },
   { id: 'HdsJkDSJ', name: 'Аня', title: 'Дорогая Аня!', plural: false },
   { id: 'fFE67Mxa', name: 'Бля', title: 'Дорогая Юля!', plural: false },
+  { id: 'tnz4piV0', name: 'Ваня и Дарина', title: 'Уважаемый пивосос и дорогая Дарина!', plural: true },
 
 ]
 
